@@ -8,6 +8,9 @@ interface CommentProps {
     onDeleteComment:  (comment: string) => void; // a funcao na retorna nada e recebe um parametro de string
 }
 
+
+
+
 export function Comment ({ content, onDeleteComment }: CommentProps){
 
     const [likeCount, setLikeCount] = useState(0);
@@ -34,6 +37,7 @@ export function Comment ({ content, onDeleteComment }: CommentProps){
            <Avatar 
                 hasBorder={false} 
                 src="https://github.com/diego3g.png"
+                alt=""
            />
 
             <div className={styles.commentBox}>
